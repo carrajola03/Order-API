@@ -9,14 +9,14 @@ const orderController = require("../controllers/orderController");
 router.post("/", orderController.createOrder);
 
 /*
-  Buscar pedido por id
-*/
-router.get("/:orderId", orderController.getOrder);
-
-/*
   Listar pedidos
 */
 router.get("/list/all", orderController.listOrders);
+
+/*
+  Buscar pedido por id
+*/
+router.get("/:orderId", orderController.getOrder);
 
 /*
   Atualizar pedido
